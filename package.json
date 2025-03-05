@@ -1,0 +1,28 @@
+{
+  "name": "simple_webrtc_audio_call",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@roamhq/wrtc": "^0.8.0",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "node-wav": "^0.0.2",
+    "node-webrtc-audio-stream-source": "^0.3.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "wav": "^1.0.2",
+    "web-audio-api": "^0.2.2",
+    "webrtc-adapter": "^9.0.1",
+    "ws": "^8.18.0"
+  }
+}

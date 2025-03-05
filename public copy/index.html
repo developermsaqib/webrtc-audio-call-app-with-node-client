@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC Audio Call</title>
+  </head>
+
+  <body>
+    <h2>WebRTC Audio Call</h2>
+    
+    <!-- Call controls -->
+    <div id="callControls">
+      <input id="userId" placeholder="Enter User ID to Call" />
+      <button onclick="callUser()">Call</button>
+      <button id="muteButton" onclick="toggleMute()" disabled>Mute</button>
+      <button id="endCallButton" onclick="endCall()">End Call</button>
+    </div>
+
+    <!-- Call status -->
+    <div id="callStatus" style="display: none;">
+      <p id="callStatusText"></p>
+      <p>Duration: <span id="callDuration">00:00</span></p>
+    </div>
+
+    <!-- Incoming call dialog -->
+    <div id="incomingCall" style="display: none;">
+      <p>Incoming call from: <span id="callerId"></span></p>
+      <button onclick="acceptCall()">Accept</button>
+      <button onclick="rejectCall()">Reject</button>
+    </div>
+
+    <!-- Existing controls -->
+    <button id="startRecording">Start Recording</button>
+    <button id="stopRecording">Stop Recording</button>
+    <input type="file" id="audioFileInput" accept="audio/*" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

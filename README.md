@@ -1,1 +1,1 @@
-# webrtc-audio-call-app-with-node-client
+# simple-webrtc-audio-call-app
